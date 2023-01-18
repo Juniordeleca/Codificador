@@ -1,0 +1,343 @@
+body {
+    background-color: #E5E5E5;
+}
+
+#logo {
+    padding: 1%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.entradaDeTexto {
+    background-color: #E5E5E5;
+    width: 70%;
+      
+}
+
+.entradaDeTexto textarea {
+    background-color: #E5E5E5;
+    height: 72%;
+    width: 60%;
+    border: none;
+    outline: 0;
+    margin: 1% 1%;
+    padding: 0px;
+    font-size: 2em;
+}
+
+.entradaDeTexto p {
+    margin: 1em 3em;
+    font-size: 1em;
+    text-align: left;
+}
+
+.saidaDeTexto {
+    width: 400px;
+    height: 575px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+
+
+.saidaDeTexto textarea {
+    background-color: #E5E5E5;
+    height: 90%;
+    width: 90%;
+    border-style: none;
+    outline: 0;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+.saidaDaCriptografia h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.saidaDaCriptografia p {
+    font-size: 1em;
+    margin: 10px;
+    text-align: justify;
+
+}
+
+.saidaDaCriptografia {  
+    margin: 5%;
+    padding: 1.5%;
+    text-align: justify;
+    font-size: 1.25em;
+}
+
+#lupa {
+    display: block;
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    border-radius: 24px;
+    padding: 12% 12% 12% 12%;
+}
+
+
+.botao {
+    display: flex;
+    background-color: #E5E5E5;
+    justify-content: space-evenly;
+ 
+}
+
+#criptografar {
+    
+    padding: 24px;
+    text-align: center;
+    width: 200px;
+    height: 64px;
+    background: #0A3871;
+    border-radius: 24px;
+
+}
+
+
+#criptografar:hover {
+    background-color: #C0C0C0;
+    transition: 1s all;
+}
+
+#descriptografar {
+    
+    box-sizing: border-box;
+    padding: 24px;
+    width: 200px;
+    height: 64px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+}
+
+#descriptografar:hover {
+    background-color: #C0C0C0;
+    transition: 1s all;
+}
+
+#limpar {
+        
+    padding: 24px;
+    text-align: center;
+    width: 200px;
+    height: 64px;
+    background: #0A3871;
+    border-radius: 24px;
+    
+}
+
+#limpar:hover {
+    background-color: #C0C0C0;
+    transition: 1s all;
+}
+
+#copiar {
+    
+    padding: 24px;
+    text-align: center;
+    width: 200px;
+    height: 64px;
+    background: #D8DFE8;
+    border-radius: 24px;
+
+}
+
+#copiar:hover {
+    background-color: #C0C0C0;
+    transition: 1s all;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    padding: 1em;
+    margin-top: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 15px;
+}
+
+footer a {
+    padding: 3px;
+    margin: 8px;
+    width: 25px;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .entradaDeTexto {
+        width: 50%;
+        padding: 1%;
+    }
+    .entradaDeTexto textarea {
+        width: 100%;
+    }
+    .saidaDeTexto {
+        width: 400px;
+    }
+    .saidaDeTexto textarea {
+        width: 100%;
+    }
+    #lupa {
+        margin: auto;
+    }
+    .botao {
+        flex-direction: row;
+        align-items: center;
+    }
+    #criptografar {
+        margin-bottom: 1em;
+    }
+    #descriptografar {
+        margin-bottom: 1em;
+    }
+    #limpar {
+        margin-bottom: 1em;
+    }
+    #copiar {
+        margin-bottom: 1em;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .entradaDeTexto {
+        width: 100%;
+    }
+    .entradaDeTexto textarea {
+        width: 100%;
+    }
+    .saidaDeTexto {
+        width: 400px;
+    }
+    .saidaDeTexto textarea {
+        width: 100%;
+    }
+    #lupa {
+        margin: auto;
+    }
+    .botao {
+        flex-direction: column;
+        align-items: center;
+    }
+    #criptografar {
+        margin-bottom: 1em;
+    }
+    #descriptografar {
+        margin-bottom: 1em;
+    }
+    #limpar {
+        margin-bottom: 1em;
+    }
+    #copiar {
+        margin-bottom: 1em;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .entradaDeTexto {
+        width: 100%;
+    }
+    .entradaDeTexto textarea {
+        width: 100%;
+    }
+    .saidaDeTexto {
+        width: 400px;
+    }
+    .saidaDeTexto textarea {
+        width: 100%;
+    }
+    
+    .botao {
+        flex-direction: column;
+        align-items: center;
+    }
+    #criptografar {
+        margin-bottom: 3.5%;
+    }
+    #descriptografar {
+        margin-bottom: 1em;
+    }
+    #limpar {
+        margin-bottom: 1em;
+    }
+    #copiar {
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .entradaDeTexto textarea {
+        font-size: 1.5em;
+    }
+    .saidaDeTexto textarea {
+        font-size: 1.5em;
+    }
+    .botao {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .entradaDeTexto textarea {
+        font-size: 1.2em;
+    }
+    .saidaDeTexto textarea {
+        font-size: 1.2em;
+    }
+
+
+    .botao {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    .entradaDeTexto textarea {
+        font-size: 1em;
+    }
+    .saidaDeTexto textarea {
+        font-size: 1em;
+    }
+    .botao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #lupa {
+        display: none;
+    }
+}
+    
+
+    
+
+
+
+
+
+
+

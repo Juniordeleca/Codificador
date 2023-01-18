@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador de textos ONE</title>
+    <link rel="reset" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="logo" id="logo">
+    </header>
+    <main>
+        <div class="entradaDeTexto">
+
+            <textarea cols="30" rows="10" id="mensagem" type="text" placeholder="Digite seu texto" class="input-padrao" required></textarea>
+            <p><img src="images/exclamacao.png" alt="exclamation mark" width="16px"/> Apenas letras minúsculas e sem acento.</p>
+            <div class="botao">
+                <button id="criptografar">Criptografar</button>
+                <button id="descriptografar">Descriptografar</button>
+                <button id="limpar">Limpar</button>
+                <button id="copiar">Copiar</button>
+            </div>
+            
+        </div>
+        <div class="saidaDeTexto">
+            <div class="saidaDaCriptografia" id="saida">
+                <img id="lupa" src="images/lupa.png" alt="lupa">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <p id="textoCriptografado"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por Francisco Galvão para o programa "ONE - Oracle Next Education"</p>
+        <a href="https://github.com/Juniordeleca" target="_blank"><img src="images/github.png" alt="github" width="24px"></a>
+        <a href="https://www.linkedin.com/in/francisco-segundo-v%C3%A9ras-galv%C3%A3o-j%C3%BAnior-80b3b690/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BQqF7JbYuRwiuZ9Av02fJnA%3D%3D" target="_blank"><img src="images/linkedin.png" alt="linkedin" width="24px"></a>
+
+    </footer>
+
+    <script src="script/app.js"></script>
+</body>
+</html>
