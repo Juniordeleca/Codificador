@@ -13,23 +13,36 @@ const originalContent = `
 `;
 
 
-// Adiciona o evento de click ao botão criptografar
+// Adiciona evento de click ao botão criptografar
 criptografarBtn.addEventListener("click", () => {
-    let texto = mensagem.value;
-    // Criptografa o texto digitado
-    texto = texto.replace(/e/g, "enter");
-    texto = texto.replace(/i/g, "imes");
-    texto = texto.replace(/a/g, "ai");
-    texto = texto.replace(/o/g, "ober");
-    texto = texto.replace(/u/g, "ufat");
-    textoCriptografado.innerText = texto;
-    atualizarTextoCriptografado(texto);
+  let texto = mensagem.value;
+  // Verifica se o texto contém letras maiúsculas, acentos e caracteres especiais
+  const invalidChars = /[A-ZÁÉÍÓÚÀÈÌÒÙÂÊÎÔÛãõçáéíóúàèìòùâêîôû!@#$%^&*()_+-={}[]|;':"<>,.?\\]/g;
+  if (invalidChars.test(texto)) {
+    alert("O texto deve conter apenas letras minúsculas, sem acento ou caracteres especiais.");
+    return;
+  }
 
+  // Criptografando o texto
+  texto = texto.replace(/e/g, "enter");
+  texto = texto.replace(/i/g, "imes");
+  texto = texto.replace(/a/g, "ai");
+  texto = texto.replace(/o/g, "ober");
+  texto = texto.replace(/u/g, "ufat");
+  // Atualiza o conteúdo da div textoCriptografado
+  atualizarTextoCriptografado(texto);
 });
+
 
 // Adiciona o evento de click ao botão descriptografar
 descriptografarBtn.addEventListener("click", () => {
   let texto = mensagem.value;
+  // Verifica se o texto contém letras maiúsculas, acentos e caracteres especiais
+  const invalidChars = /[A-ZÁÉÍÓÚÀÈÌÒÙÂÊÎÔÛãõçáéíóúàèìòùâêîôû!@#$%^&*()_+-={}[]|;':"<>,.?\\]/g;
+  if (invalidChars.test(texto)) {
+    alert("O texto deve conter apenas letras minúsculas, sem acento ou caracteres especiais.");
+    return;
+  }
   // Descriptografa o texto
   texto = texto.replace(/enter/g, "e");
   texto = texto.replace(/imes/g, "i");
@@ -41,7 +54,7 @@ descriptografarBtn.addEventListener("click", () => {
   atualizarTextoCriptografado(texto);
 });
 
-// Adicionando evento de click ao botão limpar, também modifica a DOM para que o texto criptografado seja removido
+// Adiciona evento de click ao botão limpar, também modifica a DOM para que o texto criptografado seja removido
 limparBtn.addEventListener("click", () => {
   mensagem.value = "";
   // textoCriptografado.innerText = "";
